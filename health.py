@@ -7,4 +7,17 @@ import seaborn as sns
 
 #import my csv file
 df = pd.read_csv("diabetes.csv")
+st.markdown ("# first five items")
 st.write(df.head())
+
+st.markdown("# Last Ten Items")
+st.write(df.tall (10))
+
+
+st.title(:General information About Diabetes Analysis")
+ hall = df.describe
+ st.write (hall)
+
+
+ st. title("Blood pressure chart")
+ counted = df("Blood pressure Chart")
