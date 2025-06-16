@@ -11,13 +11,21 @@ st.markdown ("# first five items")
 st.write(df.head())
 
 st.markdown("# Last Ten Items")
-st.write(df.tall (10))
+st.write(df.tail (10))
 
 
-st.title(:General information About Diabetes Analysis")
+st.title("General information About Diabetes Analysis")
  hall = df.describe
  st.write (hall)
 
 
  st. title("Blood pressure chart")
  counted = df("Blood pressure Chart")
+
+ st.markdown ("##  overview")
+ st.markdown ("first 5 observations")
+ st.write(df.head())
+
+ st.markdown ("## Univariate Analysis")
+
+ st.markdown ()
