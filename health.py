@@ -36,9 +36,9 @@ st.write (df["BloodPressure"].describe())
           
 
            
-bp= px.bar(df['BloodPressure'BloodPresseure"], y = 'BloodPressure', title="Distribution of Blood Pressure")
+bp= px.bar(df['BloodPressure'BloodPresseure"], y = 'BloodPressure',title="Distribution of Blood Pressure")
 
-st.plotly_chart(bp, use_conatiner_width=True)
+st.plotly_chart(bp, use_container_width=True)
 
 
 
