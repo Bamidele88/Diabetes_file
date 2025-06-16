@@ -30,13 +30,13 @@ st.write(df.shape)
 
 st.markdown ("## univariate Analysis")
 
-st.markdown ("### Blood pressure")
+st.markdown ("### Blood Pressure")
 
 st.write (df["BloodPressure"].describe())
           
 
            
-fig = px.bar(df("Bloodpresseure"), y = 'Bloodpressure', title="Distribution of Blood pressure")
+fig = px.bar(df("BloodPresseure"), y = 'BloodPressure', title="Distribution of Blood Pressure")
 
 st.plotly_chart(bp, use_conatiner_width=True)
 
@@ -46,7 +46,7 @@ st.plotly_chart(bp, use_conatiner_width=True)
 
 st.markdown ("## Bivarate Analysis")
 
-st.markdown("Blood pressure vs pregnancies")
+st.markdown("Blood Pressure vs pregnancies")
 
 df2 = pd.Dataframe(df["BloodPressure"], df['pregnanacies'])
 st.write(df2)
