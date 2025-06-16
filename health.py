@@ -28,15 +28,15 @@ st.markdown("## Data shape")
 st.write(df.shape)
 
 
+st.markdown ("## univariate Analysis")
 
- st.markdown ("## univariate Analysis")
+st.markdown ("### Blood pressure")
 
- st.markdown ("### Blood pressure").
-st.write (df["Bloodpressure"].describe()
+st.write (df["Bloodpressure"].describe())
           
 
            
-fig = px.bar(df, x = "Bloodpressure", title 'Distribution of Blood pressure')
+fig = px.bar(df("Bloodpresseure"), x = "Bloodpressure", title='Distribution of Blood pressure')
 
 st.plotly_chart(bp, use_conatiner_width=true)
 
