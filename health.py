@@ -7,25 +7,54 @@ import seaborn as sns
 
 #import my csv file
 df = pd.read_csv("diabetes.csv")
-st.markdown ("# first five items")
+
+
+st.markdown ("## overview")
+
+
 st.write(df.head())
 
-st.markdown("# Last Ten Items")
-st.write(df.tail (10))
+st.markdown("### first 5 observations")
+st.write(df.head ())
 
 
-st.title("General information About Diabetes Analysis")
- hall = df.(describe)
- st.write (hall)
+st.markdown("### Last observation 5 observations")
+st.markdown(df.tail())
+
+st.markdown("### Description  of Numeric data types")
+st.write(df.describe())
+
+st.markdown("## Data shape")
+st.write(df.shape)
 
 
- st. title("Blood pressure chart")
- counted = df("Blood pressure Chart")
 
- st.markdown ("##  overview")
- st.markdown ("first 5 observations")
- st.write(df.head())
+ st.markdown ("## univariate Analysis")
 
- st.markdown ("## Univariate Analysis")
+ st.markdown ("### Blood pressure").
+st.write (df["Bloodpressure"].describe()
+          
 
- st.markdown ()
+           
+fig = px.bar(df, x = "Bloodpressure", title 'Distribution of Blood pressure')
+
+st.plotly_chart(bp, use_conatiner_width=true)
+
+
+
+
+
+st.markdown ("## Bivarate Analysis")
+
+st.markdown("Blood pressure vs pregnancies")
+
+df2 = pd.Dataframe(df["BloodPressure"], df['pregnanacies'])
+st.write(df2)
+
+
+
+
+bp2 = px.histogram(df2, x= "pregenancies", y='Bloodpressure',
+title="Distribution of pregenancies vs Bloood pressure")
+
+st.plotly_chart(bp2, use_conatiner_width=True)
