@@ -15,7 +15,7 @@ st.write(df.tail (10))
 
 
 st.title("General information About Diabetes Analysis")
- hall = df.describe
+ hall = df.(describe)
  st.write (hall)
 
 
