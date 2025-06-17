@@ -57,8 +57,8 @@ st.write(df2)
 
 
 
-bp2 = px.histogram(df2, x= "Age", y='Bloodpressure',
-title="Distribution of Age vs Bloood pressure")
+bp2 = px.histogram(df2, x= "Pregnancies", y='Bloodpressure',
+title="Distribution of Pregnancies vs Bloood pressure")
 
 st.plotly_chart(bp2, use_conatiner_width=True)
 
