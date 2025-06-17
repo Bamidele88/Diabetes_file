@@ -3,6 +3,10 @@ import streamlit as st
 import matplotlib.pyplot as pt
 import numpy as np
 import seaborn as sns 
+import plotly_express as px
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
 
 
 #import my csv file
@@ -58,3 +62,18 @@ bp2 = px.histogram(df2, x= "pregenancies", y='Bloodpressure',
 title="Distribution of pregenancies vs Bloood pressure")
 
 st.plotly_chart(bp2, use_conatiner_width=True)
+
+
+
+#PREDICTIVE DATA ANALYSIS(PREDICTION)
+st.markdown("##PREDICTICE ANALYSIS")
+#use drop function to select the column to predict
+x =df.drop(["Outcome" ,axis=1])
+y = df["Outcome"]
+
+X_train, x_test,Y_train,Y_test = train_test_split(X,Y,test_size=0,2)
+
+model = LogisticRegression
+model . fit(X_train,Y_train)
+
+prediction = model.predict(X_test)
