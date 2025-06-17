@@ -51,7 +51,7 @@ st.plotly_chart(bp, use_container_width =True)
 st.markdown ("## BIVARIATE ANALYSIS")
 st.markdown("Blood Pressure vs Age Description")
 
-df2 = pd.Dataframe(df["BloodPressure"], df['Age'])
+df2 = pd.Dataframe(df["BloodPressure"], df["Age"])
 st.write(df2)
 
 
