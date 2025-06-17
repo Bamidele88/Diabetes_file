@@ -48,7 +48,7 @@ st.plotly_chart(bp, use_container_width =True)
 
 
 
-st.markdown ("## BIVARAITE ANALYSIS")
+st.markdown ("## BIVARIATE ANALYSIS")
 st.markdown("Blood Pressure vs Age Description")
 
 df2 = pd.Dataframe(df["BloodPressure"], df['Age'])
@@ -57,7 +57,7 @@ st.write(df2)
 
 
 
-bp2 = px.histogram(df2, x= "Ages", y='Bloodpressure',
+bp2 = px.histogram(df2, x= "Age", y='Bloodpressure',
 title="Distribution of Age vs Bloood pressure")
 
 st.plotly_chart(bp2, use_conatiner_width=True)
