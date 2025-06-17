@@ -68,15 +68,15 @@ st.plotly_chart(bp2, use_conatiner_width=True)
 #PREDICTIVE DATA ANALYSIS(PREDICTION)
 st.markdown("##PREDICTICE ANALYSIS")
 #use drop function to select the column to predict
-x =df.drop( []"Outcome" ,axis=1])
-y = df["Outcome"]
+x = df.drop("Outcome", axis=1)
+Y= df["Outcome"]
 
-X_train, x_test,Y_train,Y_test = train_test_split(X,Y,test_size=0,2)
+x_train,x_test,Y_train,Y_test = train_test_split(x,Y,test_size=0.2)
 
-model = LogisticRegression
-model . fit(X_train,Y_train)
+model = LogisticRegression()
+model.fit(x_train,Y_train)
 
-prediction = model.predict(X_test)
+prediction = model.predict(x_test)
 
 
 st.write(prediction)
